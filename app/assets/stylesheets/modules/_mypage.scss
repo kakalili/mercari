@@ -1,0 +1,200 @@
+.body{
+  position: relative;
+  background-color: #eee;
+  height: 2000px;
+  main{
+    margin: 40px auto 0;
+    width:1020px;
+    .l-side{
+      float:left;
+      width:280px;
+      // height:90%;
+      margin:0 40px 0 0;
+      .mypage-nav{
+        ul{
+          li:hover{
+            background-color:#eee;
+            i.fa{
+              color:#000;
+            }
+          }
+          li{
+            background-color:#fff;
+            border:0;
+            border-top:1px solid #eee;
+            width:280px;
+            height:50px;
+            a{
+              position: relative;
+              display: block;
+              min-height: 48px;
+              padding: 16px;
+              color: #333;
+              text-decoration: none;
+              i.fa{
+                float:right;
+                color: #ccc;
+              }
+            }
+          }
+        }
+        h3{
+          margin: 40px 4% 0;
+          font-size: 16px;
+        }
+      }
+    }
+    .l-content{
+      float: right;
+      width: 700px;
+      height: 90%;
+      section.mypage-user--icon{
+        height: 200px;
+        background: url("https://www.mercari.com/jp/assets/img/mypage/user-bg.jpg?91658059");
+        position: relative;
+        padding: 20px;
+        background-size: cover;
+        a{
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          transform: translate(0,-50%);
+          color: #333;
+          text-align: center;
+          figure{
+            margin: 0 auto;
+            border-radius: 50%;
+            img{
+              width: 70px;
+              height: 70px;
+              vertical-align: middle;
+              border-radius: 90px;
+            }
+          }
+          h2{
+            margin: 8px 0 0;
+            font-size: 14px;
+          }
+          .mypage-number{
+            margin: 8px 0 0;
+            font-size: 16px;
+          }
+        }
+      }
+      section.mypage-tab-container-notification-todo{
+        overflow: hidden;
+        ul{
+          border: 0;
+          background: #eee;
+          font-size: 0;
+          line-height: inherit;
+          li{
+            width: 50%;
+            display: inline-block;
+            text-align: center;
+            vertical-align: top;
+            background-color: #fff;
+            float: left;
+            // border-top: 2px solid #ea352d;
+            h3{
+              font-size: 16px;
+              height: 73px;
+              line-height: 73px;
+              font-weight: bold;
+            }
+          }
+        }
+        .tab-content{
+          ul{
+            li:not(.mypage-go-list):hover{
+              background-color:#eee;
+              i.fa{
+                color:#000;
+              }
+            }
+            li{
+              // height: 80px;
+              width: 700px;
+              border-bottom: 1px solid #eee;
+              position: relative;
+              a.mypage-item-link{
+                display: block;
+                height: 64px;
+                padding: 16px;
+                color: #333;
+                text-decoration: none;
+                figure{
+                  float:left;
+                  margin: 0;
+                  img{
+                    height: 48px;
+                    width: 48px;
+                  }
+                }
+                .mypage-item-body{
+                  height: 60px;
+                  margin: 0 40px 0 68px;
+                  p{
+                    font-size: 10px;
+                    text-align:left;
+                  }
+                }
+                i.fa{
+                  // float: right;
+                  font-size: 20px;
+                  position: absolute;
+                  top: 50%;
+                  right: 16px;
+                  transform: translate(0,-50%);
+                }
+              }
+            }
+            li.mypage-go-list{
+              border: 0;
+              position: relative;
+              .mypage-list{
+                font-size: 10px;
+                width: 600px;
+                display: block;
+                height: 56px;
+                margin: 13px auto;
+                background: #eee;
+                color: #333;
+                line-height: 56px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+      .mypage-tab-container{
+        margin: 40px 0 0;
+        background: #fff;
+        height: 100px;
+        display: block;
+        .mypage-tab-head{
+          padding: 0 4%;
+          background: #fafafa;
+          font-size: 16px;
+          line-height: 72px;
+        }
+        .mypage-tabs{
+          border: 0;
+          background: #eee;
+          font-size: 0;
+        }
+        .tab-content{
+        }
+      }
+    }
+  }
+}
+
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
